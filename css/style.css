@@ -18,7 +18,7 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-a, button {
+a {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--textcolor);
 	font-weight: 600;
@@ -44,6 +44,10 @@ header {
 
 .navbar a {
 	padding: 0 16px;
+}
+
+.navbar a:nth-child(4) {
+	padding-right: 26px;
 }
 
 
