@@ -3,22 +3,21 @@
 /*Material icons*/
 
 /*Sizing*/
+.material-icons.md-16 { font-size: 16px; }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
+.material-icons.md-32 { font-size: 32px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 /*Coloring*/
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 
-
+.mr-6 { margin-right: 6px; }
+.border { border: 1px solid red; }
 :root {
 	--primary: rgba(0, 136, 169, 1);
 	--secondary: #24252A;
+	--bg-color: #edf0f1;
 	--textcolor: #edf0f1;
 }
 
@@ -41,13 +40,17 @@ a {
 	font-size: 18px;
 	text-decoration: none;
 }
+
+
+
 header {
 	/*border: 1px solid;*/
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 20px 8%;
+	padding: 0 8%;
 	background-color: var(--secondary);
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -57,26 +60,27 @@ header {
 	margin-right: auto;
 }
 
-/*nav-items*/
-.nav-item {
+.navbar {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-/*.navbar a {
-	padding: 0 16px;
-}
+/*nav-items*/
 
-.navbar a:nth-child(4) {
-	padding-right: 26px;
-}*/
+.nav-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 16px;
+}
 
 
 .navbar a:hover {
-	color: rgba(0, 136, 169, 0.8);
-	transition: all 0.5s ease 0s;
+	background-color: var(--bg-color);
+	color: var(--secondary);
+	transition: background-color .5s;
 }
 
 .cta {
@@ -109,27 +113,27 @@ header {
 	  left: 0;
 	  background-color: var(--secondary);
 	  overflow-y: hidden;
+	  overflow-x: hidden;
 	  transition: 0.5s;
+	  /*flexbox*/
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
 	}
 
 	.navbar {
-	  position: relative;
-	  top: 12%;
-	  width: 100%;
-	  text-align: center;
-	  margin-top: 30px;
-	}
-	.overlay a {
-	  padding: 20px;
-	  text-decoration: none;
-	  font-size: 36px;
-	  color: var(--textcolor);
-	  display: block;
-	  transition: 0.3s;
+		position: relative;
+		flex-direction: column;
+		flex-basis: 100%;
+		/*top: 16%;*/
 	}
 
-	.overlay a:hover, .overlay a:focus {
-	  color: rgba(0, 136, 169, 0.8);
+	.navbar a {
+	  font-size: 30px;
+	  color: var(--textcolor);
+	}
+	.nav-item {
+		padding: 20px 100%;
 	}
 
 
@@ -143,8 +147,7 @@ header {
 		width: 40px;
 		height: 35px;
 		cursor: pointer;
-		transition: all .5s ease-in-out;
-		/*border: 1px solid #fff;*/
+		padding: 32px 0;
 		margin-left: 25px;
 		z-index: 1;
 	}
