@@ -26,13 +26,14 @@ a, button {
 	text-decoration: none;
 }
 header {
-	border: 1px solid;
+	/*border: 1px solid;*/
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 16px 8%;
+	padding: 20px 8%;
 	background-color: var(--secondary);
 }
+
 
 .logo {
 	cursor: pointer;
@@ -42,7 +43,6 @@ header {
 
 
 .navbar a {
-	/*display: inline-block;*/
 	padding: 0 16px;
 }
 
@@ -52,17 +52,20 @@ header {
 	transition: all 0.5s ease 0s;
 }
 
-button {
+.cta {
+	/*position: fixed;*/
 	padding: 9px 16px;
 	background-color: var(--primary) ;
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
-	margin-left: 16px;
 }
 
-button:hover {
+.cta:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+.cta:active {
 	background-color: rgba(0, 136, 169, 0.8);
 }
 
@@ -84,13 +87,13 @@ button:hover {
 
 	.navbar {
 	  position: relative;
-	  top: 25%;
+	  top: 12%;
 	  width: 100%;
 	  text-align: center;
 	  margin-top: 30px;
 	}
 	.overlay a {
-	  padding: 10px;
+	  padding: 20px;
 	  text-decoration: none;
 	  font-size: 36px;
 	  color: var(--textcolor);
@@ -102,25 +105,9 @@ button:hover {
 	  color: rgba(0, 136, 169, 0.8);
 	}
 
-	
-}
 
-/*@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-}*/
+/*Hamburger Menu starts*/
 
-
-
-
-/*Hamburger*/
-
-@media all and (max-width: 800px) {
 	.menu-btn {
 		position: relative;
 		display: flex;
@@ -180,7 +167,20 @@ button:hover {
 	.menu-btn.open .menu-btn_burger::after {
 		transform: rotate(-45deg) translate(35px, 35px);
 	}
+
+	
 }
+
+/*Hamburger menu ends*/
+
+@media all and (max-width: 320px) {
+
+	.cta {
+			display: none;
+	}
+
+}
+
 
 
 
