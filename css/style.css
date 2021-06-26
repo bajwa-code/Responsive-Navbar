@@ -83,6 +83,12 @@ header {
 	transition: background-color .5s;
 }
 
+.active {
+	background-color: var(--bg-color);
+	color: var(--secondary);
+	transition: background-color .5s;
+}
+
 .cta {
 	/*position: fixed;*/
 	padding: 9px 16px;
