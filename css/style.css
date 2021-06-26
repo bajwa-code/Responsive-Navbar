@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/*Material icons*/
+
+/*Sizing*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+/*Coloring*/
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+
 :root {
 	--primary: rgba(0, 136, 169, 1);
 	--secondary: #24252A;
@@ -22,7 +38,7 @@ a {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--textcolor);
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 18px;
 	text-decoration: none;
 }
 header {
@@ -41,14 +57,21 @@ header {
 	margin-right: auto;
 }
 
+/*nav-items*/
+.nav-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 
-.navbar a {
+/*.navbar a {
 	padding: 0 16px;
 }
 
 .navbar a:nth-child(4) {
 	padding-right: 26px;
-}
+}*/
 
 
 .navbar a:hover {
